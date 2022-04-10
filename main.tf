@@ -1,3 +1,9 @@
+provider "aws" {
+  region     = var.region
+  access_key = ""
+  secret_key = ""
+}
+
 /*
   VPC creation for given CIDR range
 */
