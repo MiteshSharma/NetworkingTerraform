@@ -17,6 +17,7 @@ resource "aws_vpc" "networking" {
       "Name"        = var.project_name
     },
     var.extra_tags,
+    var.vpc_tags,
   )
 }
 
@@ -48,6 +49,7 @@ resource "aws_subnet" "public" {
       "Project"     = var.project_name
     },
     var.extra_tags,
+    var.subnet_public_tags,
   )
 }
 
@@ -126,6 +128,7 @@ resource "aws_subnet" "private_app" {
       "Project"     = var.project_name
     },
     var.extra_tags,
+    var.subnet_private_tags,
   )
 }
 

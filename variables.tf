@@ -46,3 +46,17 @@ variable enable_vpc_flow_logs {
   default = 1
 }
 
+variable "vpc_tags" {
+  description = "vpc tags"
+  default     = {}
+}
+
+variable "subnet_public_tags" {
+  description = "public subnet tags"
+  default     = {}
+}
+
+variable "subnet_private_tags" {
+  description = "private subnet tags"
+  default     = {}
+}
